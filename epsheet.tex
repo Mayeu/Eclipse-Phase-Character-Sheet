@@ -1,0 +1,85 @@
+\documentclass[a4paper,9pt]{article}
+
+\usepackage[left=1cm,right=1cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{eqparbox}
+\usepackage{supertabular}
+
+% alias for \footnotesize
+%\newcommand{\tiny}[1]{\footnotesize{#1}}
+
+\begin{document}
+
+% Start: Ego Sheet
+
+% Player name
+\begin{tabular}{p{1.7cm}|p{7.8cm}}
+\raggedleft \textsc{Player} & \\ \hline
+\end{tabular}
+
+% Size for "character"
+\newcommand{\charsize}[1]{\eqparbox{charsize}{\raggedleft #1}}
+
+\begin{tabular}{r|p{5.2cm}}
+   \charsize{\textsc{Character}} & \\ \hline
+   \charsize{\textsc{Background}} & \\ \hline
+   \charsize{Faction} & \\ \hline
+   \charsize{Gender Identity} & \\ \hline
+   \charsize{Actual Age} & \\ \hline
+   \charsize{Current Moxie Points} & \\ \hline
+   \charsize{Rez Points} & \\ \hline
+   \charsize{Motivations} & \\
+   \charsize{} & \\
+   \charsize{} & \\ \hline
+\end{tabular}
+
+% Aptitudes
+\section*{\textsc{Aptitudes}}
+
+\begin{tabular}{r|c|c|c|c|c|c|c}
+   & COG & COO & INT & REF & SAV & SOM & WIL \\ \hline
+   Base &&&&&&& \\ \hline
+   Morph A &&&&&&& \\ \hline
+   Morph B &&&&&&& \\ \hline
+   Morph C &&&&&&&
+\end{tabular}
+
+%Stats
+\section*{\textsc{Stats}}
+
+\begin{tabular}{r|c|c|c|c|c|c|c|c|c|c}
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{\tiny{Bio: Dur*1.5}}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}\\
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{\tiny{LUC/5}}&
+   \multicolumn{1}{c}{\tiny{WIL*2}}&
+   \multicolumn{1}{c}{\tiny{LUC*2}}&
+   \multicolumn{1}{c}{\tiny{DUR/5}}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{\tiny{Synth: Dur*2}}&
+   \multicolumn{1}{c}{\tiny{(INT+REF)*2}}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{\tiny{SOM/10}}\\
+
+   & MOX & TT & LUC & IR & WT & DUR & DR & INIT & SPD & DB\\ \hline
+\end{tabular}
+
+
+% End: Ego Sheet
+
+% Fake id sheet
+
+% Skills and equipment sheet
+
+% Morph sheet
+
+\end{document}
