@@ -1,6 +1,6 @@
 \documentclass[a4paper,9pt]{article}
 
-\usepackage[left=1cm,right=1cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage[left=0.8cm,right=0.8cm,top=1.5cm,bottom=1.5cm]{geometry}
 \usepackage{eqparbox}
 \usepackage{supertabular}
 
@@ -38,9 +38,10 @@
 \begin{tabular}{r|c|c|c|c|c|c|c}
    & COG & COO & INT & REF & SAV & SOM & WIL \\ \hline
    Base &&&&&&& \\ \hline
-   Morph A &&&&&&& \\ \hline
-   Morph B &&&&&&& \\ \hline
-   Morph C &&&&&&&
+   Morph &&&&&&&
+   %Morph A &&&&&&& \\ \hline
+   %Morph B &&&&&&& \\ \hline
+   %Morph C &&&&&&&
 \end{tabular}
 
 %Stats
@@ -50,29 +51,76 @@
    \multicolumn{1}{c}{}&
    \multicolumn{1}{c}{}&
    \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{\tiny{WIL*2}}&
    \multicolumn{1}{c}{}&
-   \multicolumn{1}{c}{}&
-   \multicolumn{1}{c}{}&
-   \multicolumn{1}{c}{}&
-   \multicolumn{1}{c}{\tiny{Bio: Dur*1.5}}&
-   \multicolumn{1}{c}{}&
+   \multicolumn{2}{c}{\tiny{From Morph}}&
+   \multicolumn{2}{r}{\tiny{(INT+REF)/5}}&
    \multicolumn{1}{c}{}&
    \multicolumn{1}{c}{}\\
+
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{$\vee$}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{$\vee$}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{$\vee$}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}\\
+
+
+   & MOX & TT & LUC & IR & WT & DUR & DR & INIT & SPD & DB\\ \hline
+   Morph  &&&&&&&&&&\\\hline
+   %Morph A &&&&&&&&&&\\\hline
+   %Morph B &&&&&&&&&&\\\hline
+   %Morph C &&&&&&&&&&\\\hline
+
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{$\wedge$}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{$\wedge$}&
+   \multicolumn{1}{c}{$\wedge$}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{$\wedge$}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{$\wedge$}\\
+
    \multicolumn{1}{c}{}&
    \multicolumn{1}{c}{}&
    \multicolumn{1}{c}{\tiny{LUC/5}}&
-   \multicolumn{1}{c}{\tiny{WIL*2}}&
+   \multicolumn{1}{c}{}&
    \multicolumn{1}{c}{\tiny{LUC*2}}&
    \multicolumn{1}{c}{\tiny{DUR/5}}&
    \multicolumn{1}{c}{}&
-   \multicolumn{1}{c}{\tiny{Synth: Dur*2}}&
-   \multicolumn{1}{c}{\tiny{(INT+REF)*2}}&
-   \multicolumn{1}{c}{}&
+   \multicolumn{3}{l}{\tiny{Bio: Dur*1.5}}&
    \multicolumn{1}{c}{\tiny{SOM/10}}\\
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{1}{c}{}&
+   \multicolumn{3}{l}{\tiny{Synth: Dur*2}}&
+   \multicolumn{1}{c}{}\\
 
-   & MOX & TT & LUC & IR & WT & DUR & DR & INIT & SPD & DB\\ \hline
 \end{tabular}
 
+% Damage & Stress
+
+\section*{\textsc{Damage \& Stress}}
+
+\begin{tabular}{c|c|c|c}
+   \textsc{Damage} & \textsc{Wounds} & \textsc{Stress} & \textsc{Trauma}\\\hline
+   &&&
+\end{tabular}
+
+% Primary Equipment
+\section{\textsc{Primary Equipment}}
 
 % End: Ego Sheet
 
